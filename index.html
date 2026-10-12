@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix - Watch Movies & TV Shows</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header and Hero Section -->
+    <header class="hero">
+
+        <nav>
+            <div class="logo">NETFLIX</div>
+
+            <div class="nav-right">
+                <select aria-label="Select language">
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                </select>
+
+                <a href="#signup" class="sign-in">Sign In</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+
+            <h2>Watch anywhere. Cancel anytime.</h2>
+
+            <p>
+                Ready to watch? Enter your email to create
+                or restart your membership.
+            </p>
+
+            <form class="email-form" id="signup">
+                <input
+                    type="email"
+                    placeholder="Email address"
+                    aria-label="Email address"
+                    required
+                >
+
+                <button type="submit" class="get-started">
+                    Get Started &rsaquo;
+                </button>
+            </form>
+        </div>
+
+    </header>
+
+    <!-- Trending Movies Section -->
+    <section class="movies">
+        <h2>Trending Now</h2>
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <span class="number">1</span>
+                <img
+                    src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=500&q=80"
+                    alt="Night sky movie artwork">
+                <h3>Dark Horizon</h3>
+            </div>
+
+            <div class="movie-card">
+                <span class="number">2</span>
+                <img
+                    src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80"
+                    alt="Fantasy landscape movie artwork">
+                <h3>Lost Kingdom</h3>
+            </div>
+
+            <div class="movie-card">
+                <span class="number">3</span>
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80"
+                    alt="Adventure landscape movie artwork">
+                <h3>Into the Wild</h3>
+            </div>
+
+            <div class="movie-card">
+                <span class="number">4</span>
+                <img
+                    src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=500&q=80"
+                    alt="Ocean movie artwork">
+                <h3>Deep Blue</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>More reasons to join</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature">
+                <h3>Enjoy on your TV</h3>
+                <p>
+                    Watch on Smart TVs, PlayStation, Xbox,
+                    Chromecast, Apple TV and more.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Download your shows</h3>
+                <p>
+                    Save your favourites easily and watch
+                    them offline.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Watch everywhere</h3>
+                <p>
+                    Stream movies and TV shows on your
+                    phone, tablet, laptop and TV.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Create profiles for kids</h3>
+                <p>
+                    Give children a space for their
+                    favourite characters.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Questions? Contact us.</p>
+
+        <div class="footer-links">
+            <a href="#signup">FAQ</a>
+            <a href="#signup">Help Centre</a>
+            <a href="#signup">Terms of Use</a>
+            <a href="#signup">Privacy</a>
+        </div>
+
+        <p>Netflix-inspired demo webpage.</p>
+    </footer>
+
+    <!-- Demo signup interaction -->
+    <script>
+        document.querySelector(".email-form").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+                alert("This is a demo. Real signup requires a backend.");
+            }
+        );
+    </script>
+
+</body>
+</html>
